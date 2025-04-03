@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivam Prasad Animation</title>
+    <title>SHIVAM PRASAD Animation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,11 +24,11 @@
 <body>
 
     <h1>
-        <a href="#" id="name" onmouseover="startSpin()">🚀 Shivam Prasad 🚀</a>
+        <a href="#" id="name" onmouseover="startSpin()">SHIVAM PRASAD</a>
     </h1>
 
     <script>
-        let originalName = "Shivam Prasad";
+        let originalName = "SHIVAM PRASAD";
         let scrambledChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&+";
         let nameElement = document.getElementById("name");
         let intervals = [];
@@ -47,7 +47,7 @@
                 let speed = speeds[index] || 150;
                 intervals[index] = setInterval(() => {
                     let scrambledText = letters.map((c, i) => (i <= index ? getRandomChar() : c)).join("");
-                    nameElement.innerHTML = "🚀 " + scrambledText + " 🚀";
+                    nameElement.innerHTML = "" + scrambledText + " ";
                 }, speed);
             });
 
@@ -58,7 +58,7 @@
         function stopSpin() {
             intervals.forEach(clearInterval);
             intervals = [];
-            nameElement.innerHTML = "🚀 " + originalName + " 🚀"; 
+            nameElement.innerHTML = " " + originalName + " "; 
         }
     </script>
 
