@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivam Prasad</title>
+    <title>Shivam Prasad Animation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,45 +24,37 @@
 <body>
 
     <h1>
-        <a href="#" id="name" onclick="spinName()">🚀 Shivam Prasad 🚀</a>
+        <a href="#" id="name" onmouseover="startSpin()" onmouseleave="stopSpin()">🚀 Shivam Prasad 🚀</a>
     </h1>
 
     <script>
-        function spinName() {
-            let originalName = "Shivam Prasad";
-            let scrambledChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&+";
-            let nameElement = document.getElementById("name");
+        let originalName = "Shivam Prasad";
+        let scrambledChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&+";
+        let nameElement = document.getElementById("name");
+        let intervals = [];
+        let speeds = [200, 180, 160, 140, 120, 100, 80, 60, 40, 20, 10, 5]; // Slower to faster
 
-            let newName = "";
-            let delay = 50; // Speed of rotation
-            let iterations = 12; // Number of rotations
+        function getRandomChar() {
+            return scrambledChars[Math.floor(Math.random() * scrambledChars.length)];
+        }
 
-            function getRandomChar() {
-                return scrambledChars[Math.floor(Math.random() * scrambledChars.length)];
-            }
+        function startSpin() {
+            stopSpin(); // Clear any existing animations
+            
+            let letters = originalName.split("");
 
-            function scramble(index, count) {
-                if (count === 0) {
-                    newName += originalName[index];
-                } else {
-                    newName += getRandomChar();
-                }
-            }
+            letters.forEach((char, index) => {
+                let speed = speeds[index] || 5; // Assign speed from array
+                intervals[index] = setInterval(() => {
+                    let scrambledText = letters.map((c, i) => (i <= index ? getRandomChar() : c)).join("");
+                    nameElement.innerHTML = "🚀 " + scrambledText + " 🚀";
+                }, speed);
+            });
+        }
 
-            let i = 0;
-            let interval = setInterval(() => {
-                newName = "";
-                for (let j = 0; j < originalName.length; j++) {
-                    scramble(j, (j + 1) * 2 - (i % ((originalName.length + 1) * 2)));
-                }
-                nameElement.innerHTML = "🚀 " + newName + " 🚀";
-
-                i++;
-                if (i >= iterations) {
-                    clearInterval(interval);
-                    nameElement.innerHTML = "🚀 " + originalName + " 🚀"; // Restore original name
-                }
-            }, delay);
+        function stopSpin() {
+            intervals.forEach(clearInterval);
+            nameElement.innerHTML = "🚀 " + originalName + " 🚀"; // Restore original name
         }
     </script>
 
