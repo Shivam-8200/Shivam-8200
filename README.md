@@ -96,7 +96,6 @@
 
 
 
-![snake gif](https://github.com/Shivam-8200/Shivam-8200/blob/output/github-contribution-grid-snake.svg)
 
 
 
