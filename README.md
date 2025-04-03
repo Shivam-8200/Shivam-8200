@@ -18,7 +18,7 @@
 ✔ **Programming:** C, C++, Java, Python, JavaScript  
 ✔ **Web Technologies:** HTML, CSS, React, Node.js, Express.js  
 ✔ **Databases:** MySQL, MongoDB  
-✔ **Cloud & Tools:** AWS, Git, Docker  
+  
 
 ---
 
