@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="#" id="name" onclick="spinName()">🚀 Shivam Prasad 🚀</a>
+  <a href="#" id="name" onclick="spinName()"> SHIVAM PRASAD </a>
 </h1>
 
 <p align="center">
@@ -50,19 +50,11 @@
 </p>
 
 ---
+<div align="center">
+  
+  ![snake gif](https://github.com/Shivam-8200/Shivam-8200/blob/output/github-snake-dark.svg)
 
-## 🐍 Snake Eating Contributions
-<p align="center">
-  <img src="https://github.com/Shivam-8200/Shivam-8200/blob/output/github-contribution-grid-snake.svg">
-</p>
-
----
-
-## 📊 Contribution Activity
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shivam-8200&theme=tokyo-night">
-</p>
-
+</div>
 ---
 
 ## 🚀 Featured Projects
@@ -91,18 +83,3 @@
 🔔 **Follow me for more cool projects!**  
 
 ---
-
-### **🌀 Spinning Effect on Name (JavaScript)**
-GitHub doesn’t support JavaScript directly in `README.md`, so **to make the name spin**, you’ll need to add this **in your GitHub Profile README HTML section**:
-
-```html
-<script>
-  function spinName() {
-    let name = document.getElementById("name");
-    name.style.transition = "transform 1s ease-in-out";
-    name.style.transform = "rotate(360deg)";
-    setTimeout(() => {
-      name.style.transform = "rotate(0deg)";
-    }, 1000);
-  }
-</script>
