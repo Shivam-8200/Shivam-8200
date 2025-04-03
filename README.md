@@ -51,10 +51,7 @@
 
 ---
 
-## 🐍 Snake Eating Contributions
-<p align="center">
-  <img src="https://github.com/Shivam-8200/Shivam-8200/blob/output/github-contribution-grid-snake.svg">
-</p>
+
 
 ---
 
@@ -92,8 +89,18 @@
 
 ---
 
-### **🌀 Spinning Effect on Name (JavaScript)**
-GitHub doesn’t support JavaScript directly in `README.md`, so **to make the name spin**, you’ll need to add this **in your GitHub Profile README HTML section**:
+
+
+
+
+
+
+
+![snake gif](https://github.com/Shivam-8200/Shivam-8200/blob/output/github-contribution-grid-snake.svg)
+
+
+
+
 
 ```html
 <script>
@@ -106,3 +113,9 @@ GitHub doesn’t support JavaScript directly in `README.md`, so **to make the na
     }, 1000);
   }
 </script>
+
+
+
+
+
+
