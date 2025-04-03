@@ -95,17 +95,7 @@
 
 
 
-```html
-<script>
-  function spinName() {
-    let name = document.getElementById("name");
-    name.style.transition = "transform 1s ease-in-out";
-    name.style.transform = "rotate(360deg)";
-    setTimeout(() => {
-      name.style.transform = "rotate(0deg)";
-    }, 1000);
-  }
-</script>
+
 
 
 
