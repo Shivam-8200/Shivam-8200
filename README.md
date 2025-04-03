@@ -50,16 +50,11 @@
 </p>
 
 ---
+<div align="center">
+  
+  ![snake gif](https://github.com/Shivam-8200/Shivam-8200/blob/output/github-snake-dark.svg)
 
-
-
----
-
-## 📊 Contribution Activity
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shivam-8200&theme=tokyo-night">
-</p>
-
+</div>
 ---
 
 ## 🚀 Featured Projects
@@ -88,7 +83,6 @@
 🔔 **Follow me for more cool projects!**  
 
 ---
-
 
 
 
