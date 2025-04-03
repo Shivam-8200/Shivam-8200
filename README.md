@@ -1,7 +1,7 @@
 <h1 align="center">
   <a href="#" id="name" onclick="spinName()"> SHIVAM PRASAD </a>
 </h1>
-🚀 Hover over my name for a cool effect 👉 [Shivam Prasad](https://shivam-8200.github.io/Shivam-8200)
+🚀 Hover over my name for a cool effect 👉 [Shivam Prasad](https://shivam-8200.github.io/Shivam-8200/)
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00ADB5&center=true&vCenter=true&width=600&lines=Full+Stack+Developer+%7C+ML+Enthusiast;Passionate+about+Coding+and+Tech!;Building+awesome+projects+one+line+at+a+time!">
