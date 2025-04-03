@@ -24,7 +24,7 @@
 <body>
 
     <h1>
-        <a href="#" id="name" onmouseover="startSpin()" onmouseleave="stopSpin()">🚀 Shivam Prasad 🚀</a>
+        <a href="#" id="name" onmouseover="startSpin()">🚀 Shivam Prasad 🚀</a>
     </h1>
 
     <script>
@@ -32,29 +32,33 @@
         let scrambledChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&+";
         let nameElement = document.getElementById("name");
         let intervals = [];
-        let speeds = [200, 180, 160, 140, 120, 100, 80, 60, 40, 20, 10, 5]; // Slower to faster
+        let speeds = [200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400];
 
         function getRandomChar() {
             return scrambledChars[Math.floor(Math.random() * scrambledChars.length)];
         }
 
         function startSpin() {
-            stopSpin(); // Clear any existing animations
-            
+            stopSpin(); // Stop any previous animation
+
             let letters = originalName.split("");
 
             letters.forEach((char, index) => {
-                let speed = speeds[index] || 5; // Assign speed from array
+                let speed = speeds[index] || 150;
                 intervals[index] = setInterval(() => {
                     let scrambledText = letters.map((c, i) => (i <= index ? getRandomChar() : c)).join("");
                     nameElement.innerHTML = "🚀 " + scrambledText + " 🚀";
                 }, speed);
             });
+
+            // Stop scrambling after 2 seconds
+            setTimeout(stopSpin, 2000);
         }
 
         function stopSpin() {
             intervals.forEach(clearInterval);
-            nameElement.innerHTML = "🚀 " + originalName + " 🚀"; // Restore original name
+            intervals = [];
+            nameElement.innerHTML = "🚀 " + originalName + " 🚀"; 
         }
     </script>
 
