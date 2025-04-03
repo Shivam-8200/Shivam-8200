@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Prasad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #121212;
+            color: white;
+            padding: 50px;
+        }
+        a {
+            font-size: 40px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #00ADB5;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>
+        <a href="#" id="name" onclick="spinName()">🚀 Shivam Prasad 🚀</a>
+    </h1>
+
+    <script>
+        function spinName() {
+            let originalName = "Shivam Prasad";
+            let scrambledChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&+";
+            let nameElement = document.getElementById("name");
+
+            let newName = "";
+            let delay = 50; // Speed of rotation
+            let iterations = 12; // Number of rotations
+
+            function getRandomChar() {
+                return scrambledChars[Math.floor(Math.random() * scrambledChars.length)];
+            }
+
+            function scramble(index, count) {
+                if (count === 0) {
+                    newName += originalName[index];
+                } else {
+                    newName += getRandomChar();
+                }
+            }
+
+            let i = 0;
+            let interval = setInterval(() => {
+                newName = "";
+                for (let j = 0; j < originalName.length; j++) {
+                    scramble(j, (j + 1) * 2 - (i % ((originalName.length + 1) * 2)));
+                }
+                nameElement.innerHTML = "🚀 " + newName + " 🚀";
+
+                i++;
+                if (i >= iterations) {
+                    clearInterval(interval);
+                    nameElement.innerHTML = "🚀 " + originalName + " 🚀"; // Restore original name
+                }
+            }, delay);
+        }
+    </script>
+
+</body>
+</html>
