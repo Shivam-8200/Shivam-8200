@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="https://github.com/Shivam-8200/Shivam-8200/blob/main/assets/banner.png" alt="Shivam Prasad Banner" />
-</p>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=500&center=true&vCenter=true&color=00ADB5&width=1000&lines=Hello+%F0%9F%91%8B%2C+I'm+Shivam+Prasad!;Welcome+to+my+GitHub+Profile!;Full+Stack+Developer+%7C+ML+Enthusiast;Crafting+code+with+creativity+%26+logic!">
