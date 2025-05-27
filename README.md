@@ -48,15 +48,6 @@
 
 ---
 
-## 🚀 Featured Projects
-
-| ⭐ Project | 🚀 Description |
-|----------|----------------|
-| [Car Price Detection Model](https://github.com/Shivam-8200/Car-Price-Detection) | ML model predicting car prices using regression techniques |
-| [Learning Management System](https://github.com/Shivam-8200/LMS) | Full-stack LMS platform for managing courses |
-| [E-Commerce Website](https://github.com/Shivam-8200/E-Commerce) | Scalable & responsive online store using MERN stack |
-
----
 
 ## 🔥 GitHub Stats
 
