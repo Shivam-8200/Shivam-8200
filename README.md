@@ -7,7 +7,7 @@
 
 ## 🌟 About Me
 
-- 🎓 Pursuing *B.Tech in Computer Science* at **KIIT University** (2022–2026)  
+- 🎓 *B.Tech in Computer Science* at **KIIT University** (2022–2026)  
 - 💻 *Full-Stack Developer* | *Machine Learning Enthusiast*  
 - 🌱 Currently learning: **MERN Stack** & **System Design**  
 - 💡 Passionate about solving real-world problems with scalable tech  
